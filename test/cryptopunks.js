@@ -1,4 +1,4 @@
-var CryptoPunks = artifacts.require("./CryptoPunks.sol");
+const CryptoPunks = artifacts.require('./CryptoPunks.sol')
 
 /*
 contract('CryptoPunks', function (accounts) {

@@ -1,10 +1,10 @@
-var ConvertLib = artifacts.require("./ConvertLib.sol");
-var CryptoPunks = artifacts.require("./CryptoPunks.sol");
-var CryptoPunksMarket = artifacts.require("./CryptoPunksMarket.sol");
+const ConvertLib = artifacts.require('./ConvertLib.sol')
+const CryptoPunks = artifacts.require('./CryptoPunks.sol')
+const CryptoPunksMarket = artifacts.require('./CryptoPunksMarket.sol')
 
-module.exports = function(deployer) {
-  deployer.deploy(ConvertLib);
-  deployer.link(ConvertLib, CryptoPunks);
-  deployer.deploy(CryptoPunks);
-  deployer.deploy(CryptoPunksMarket);
-};
+module.exports = function (deployer) {
+  deployer.deploy(ConvertLib)
+  deployer.link(ConvertLib, CryptoPunks)
+  deployer.deploy(CryptoPunks)
+  deployer.deploy(CryptoPunksMarket)
+}
